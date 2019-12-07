@@ -1,0 +1,916 @@
+*
+{   
+    font-family: sans-serif;
+}
+
+
+.headerlogo
+{
+  width: 200px;
+  height: 120px;
+  padding-left:-10px ;
+  padding-top:10px ;
+  padding-right:50px ;
+}
+
+.colorfull>nav
+{       position: fixed;
+        top: -16px;
+        width: 100%;
+        left:-1px;
+}
+
+.navigation-link
+{    
+    list-style-type: none;
+    background-color: #003472;
+    text-decoration: none;
+    height: 150px;
+    padding-top: 10px;
+    z-index: 1;
+}
+
+.left-menu>ul>li::before {
+    content: "\2022";
+    color: black; 
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+
+.navigation-link-items{
+    margin-left: -10px;
+    display: inline-block;
+}
+
+.navigation-link-items1{
+    display: flex;
+    display: inline-block;
+    flex-direction: column-reverse;
+}
+nav>ul>li>a
+{
+    text-decoration: none;
+    color: white;  
+}
+
+ul> li:hover
+{
+  padding: 5px;
+  background-color:skyblue;
+  border-radius:5px ;
+}
+
+
+
+.hed1
+{
+    background-color:black;
+    color:white;
+    font-size: large;
+    font-weight: bolder;
+    height: 45px;
+    margin-top: 165px;
+    padding-top:18px ;
+    padding-left: 30px;
+}
+
+
+.hed1>p
+{   display: inline;
+    background-color:black;
+    color:white;
+    padding-right:15px;
+}
+
+.hed1>img
+{   
+    padding-top: 4px;
+    padding-right: 15px;
+    height: 25px;
+    width: 50px;
+}
+.headp1
+{
+    font-size: xx-large;
+    border: 3px white solid;
+    padding-right: 20px;
+}
+.headp2
+{
+    color:grey;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+.headp3
+{
+    border: 2px white solid;
+font-size: xx-large;
+}
+
+.hed2
+{
+    background-color:black;
+    color:white;
+    font-size: large;
+    font-weight: bolder;
+    height: 45px;
+    padding-top:18px ;
+    padding-left: 30px;
+}
+
+
+.hed2>p
+{   display: inline;
+    color:white;
+    padding-right:15px;
+}
+.headp1
+{
+    background-color:silver;
+    font-size: xx-large;
+    border: 3px white double;
+    padding-right: 20px;
+}
+.headp2
+{
+
+    color:grey;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+.headp3
+{
+    background-color:silver;
+    border: 3px white double;
+    font-size: xx-large;
+}
+.headp4
+{
+    font-size: x-small;
+}
+
+
+
+.img1
+{   height: 40px;
+    width: 1350px ;
+}
+
+.mainnav
+{
+    background-color:gold;
+    height: 40px;
+
+    padding-top: 20px;
+    text-align: center;
+}
+
+.mainnav>a
+{   
+    padding-top:-20px;  
+    padding-right:80px; 
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav :hover
+{
+    color:white;    
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.img3
+{   padding-left:140px; 
+    height: 60px;
+    width: 1050px ;
+}
+
+.img4
+{
+padding-left:70px ;
+}
+
+
+#img5
+{   padding-left: 15px;
+     
+}
+
+a>img
+{   padding-left: 15px;
+    padding-right:40px; 
+}
+
+a> :hover
+{
+     border: 1px dashed;
+     border-radius:8px; 
+     background-color: black;
+}
+
+section 
+{  
+    margin-top:15px ;
+    border: 4px black dashed;
+    border-radius: 4px;
+    padding-top: 10px;
+}
+
+section img
+{   
+    height: 350px;
+    width: 600px;
+    display:flexbox;
+    flex-direction: column;
+}
+
+footer
+{   
+    color:white;
+    text-align: center;
+    background-color:#003472}
+.a
+{
+margin-left:250px;
+float: left;
+width:400px;
+padding:20px;
+}
+.b{
+    padding:20px;
+    margin-left:800px;
+    width:500px;
+}
+.fa 
+{
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover
+{
+    opacity: 0.7;
+}
+.fa-facebook
+{
+    background: #3B5998;
+    color: white;
+}
+.fa-twitter 
+{
+    background: #55ACEE;
+    color: white;
+}
+
+
+
+
+
+/*MEDIA QUERY FOR width 600px ,1000px,1200px */
+
+
+/*................................................................................................... */
+/*................................................................................................... */
+/*................................................................................................... */
+/*................................................................................................... */
+
+
+
+  @media only screen and (max-width: 1200px) 
+{
+    
+    body 
+    {
+      background-color:white;
+    }
+
+    .navigation-link-items{
+        display: inline-block;
+        margin-left: 20px;
+        padding-right: 15px;
+    }
+
+    .navigation-link-items1{
+        display: none;
+    }
+
+    .hed1
+    {
+        background-color:black;
+        color:white;
+        font-size: small;
+        font-weight: bolder;
+        height: 40px;
+        padding-top:14px ;
+        padding-left: 3px;
+    }
+    
+    
+    .hed1>p
+    {   display: inline;
+        background-color:black;
+        color:white;
+    }
+    
+
+
+    .hed1>img
+    {   
+        padding-top: 2px;
+        height: 15px;
+        width: 20px;
+    }
+  
+    .headp1
+  {
+      font-size: large;
+      border: 1px white solid;
+      padding-right: 4px;
+  }
+  
+  .headp3
+  {
+      border: 1px white solid;
+  font-size: large;
+  }
+  
+  
+  .hed2
+  {
+      background-color:black;
+      color:white;
+      font-size: medium;
+      font-weight: bolder;
+      height: 45px;
+      margin-top: 0px;
+  }
+  
+  .hed2>p
+  {   display: inline;
+      color:white;
+      padding-top: 10px;
+  
+  }
+  .headp1
+  {
+      background-color:silver;
+      font-size:small;
+      border: 1px white solid;
+      
+  }
+  .headp2
+  {
+      color:grey;
+  }
+  .headp3
+  {
+      background-color:silver;
+      border: 1px white double;
+      font-size: small;
+  }
+  .headp4
+  {
+      font-size: x-small;
+    padding-left: 200px;
+  }
+
+
+
+  .mainnav
+  {
+      background-color:gold;
+      height: 50px;
+      margin-top: 0px;
+      padding-top: 5px;
+      padding-left: 12px;
+  }
+  
+  .mainnav>a
+  {   
+      color: black;
+      text-decoration: none;
+      font-size: 18px;
+      font-family: sans-serif;
+  }
+  
+ .img44
+    {
+        width: 90%;
+        margin-left:-20px ;
+
+    }
+  
+    main>a>img
+    {
+        margin-top: 50px;
+        margin-left:80px;
+    }
+    section>a>img
+    {
+        padding-left: 80px;
+        width: 600px;
+        height: 300px;
+    }
+
+    footer
+    {
+        width: 100%;
+        margin-bottom: -10px;
+    }
+
+    .a
+    {
+    display: none;
+    }
+    .b
+    {
+    display: none;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*................................................................................................... */
+/*................................................................................................... */
+
+
+
+
+@media only screen and (max-width: 1000px) 
+{
+    
+    body 
+    {
+      background-color: white;
+    }
+
+    .headerlogo
+{
+  width: 120px;
+  height: 70px;
+  margin-left:-30px ;
+  padding-right:20px ;
+}
+
+.main-navigation
+{
+    position: fixed;    
+    width: 100%;
+    left:-1px;
+}
+
+.navigation-link
+{    
+    list-style-type: none;
+    background-color: #003472;
+    text-decoration: none;
+    height: 100px;
+    padding-top: 10px;
+    
+}
+
+.left-menu>ul>li::before {
+    content: "\2022";
+    color: black; 
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+
+
+.navigation-link-items{
+    margin-left: 30px;
+    display: inline-block;
+    padding-right:15px ;
+}
+
+.navigation-link-items1{
+    display: none;
+}
+nav>ul>li>a
+{
+    text-decoration: none;
+    color: white;  
+}
+
+ul> li:hover
+{
+  padding: 3px;
+  background-color:skyblue;
+  border-radius:3px ;
+}
+
+
+    .hed1
+    {
+        background-color:black;
+        color:white;
+        font-size: small;
+        font-weight: bolder;
+        height: 40px;
+        padding-top:14px ;
+        padding-left: 3px;
+    }
+    
+    
+    .hed1>p
+    {   display: inline;
+        background-color:black;
+        color:white;
+    }
+    
+    .hed1>img
+    {   
+        padding-top: 2px;
+        height: 15px;
+        width: 20px;
+    }
+  
+    .headp1
+  {
+      font-size: large;
+      border: 1px white solid;
+      padding-right: 4px;
+  }
+  
+  .headp3
+  {
+      border: 1px white solid;
+  font-size: large;
+  }
+  
+  
+  .hed2
+  {
+      background-color:black;
+      color:white;
+      font-size: medium;
+      font-weight: bolder;
+      height: 45px;
+      margin-top: 5px;
+  }
+  
+  .hed2>p
+  {   display: inline;
+      color:white;
+      padding-top: 10px;
+  
+  }
+  .headp1
+  {
+      background-color:silver;
+      font-size:small;
+      border: 1px white solid;
+      
+  }
+  .headp2
+  {
+      color:grey;
+  }
+  .headp3
+  {
+      background-color:silver;
+      border: 1px white double;
+      font-size: small;
+      visibility: hidden;
+  }
+  .headp4
+  {
+      font-size: x-small;
+    padding-left: 200px;
+    visibility: hidden;
+  }
+
+
+
+  .mainnav
+  {
+      background-color:gold;
+      height: 50px;
+      margin-top: 4px;
+      padding-top: 5px;
+      padding-left: 12px;
+  }
+  
+  .mainnav>a
+  {   
+      color: black;
+      text-decoration: none;
+      font-size: 18px;
+      font-family: sans-serif;
+  }
+  
+ .img4
+    {
+    display: none;
+    }
+  
+    main>a>img
+    {
+        margin-top: 50px;
+        margin-left:20px;
+    }
+    section>a>img
+    {
+        padding-left: 80px;
+        width: 600px;
+      height: 300px;
+    }
+
+    
+    footer
+    {
+        width: 100%;
+        margin-bottom: -10px;
+    }
+
+    .a
+    {
+    display: none;
+    }
+    .b
+    {
+    display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*................................................................................................... */
+/*................................................................................................... */
+
+
+@media only screen and (max-width: 600px) 
+{
+
+
+  
+.headerlogo
+{
+  width: 100px;
+  height: 60px;
+  margin-left:-30px ;
+  padding-right:20px ;
+}
+
+.main-navigation
+{
+    position: fixed;    
+    width: 100%;
+    left:-1px;
+}
+
+.navigation-link
+{    
+    list-style-type: none;
+    background-color: #003472;
+    text-decoration: none;
+    height: 100px;
+    padding-top: 10px;
+    
+}
+
+.left-menu>ul>li::before {
+    content: "\2022";
+    color: black; 
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+
+
+.navigation-link-items{
+    margin-left: -20px;
+    display: inline-block;
+    padding-right:10px ;
+
+    margin-left: -10px;
+}
+
+.navigation-link-items1{
+    display: none;
+}
+nav>ul>li>a
+{
+    text-decoration: none;
+    color: white;  
+}
+
+ul> li:hover
+{
+  padding: 3px;
+  background-color:skyblue;
+  border-radius:3px ;
+}
+
+  .hed1
+  {
+      background-color:black;
+      color:white;
+      font-size: small;
+      font-weight: bolder;
+      height: 70px;
+      margin-top: -20px;
+      padding-top:14px ;
+      padding-left: 3px;
+  }
+  
+  
+  .hed1>p
+  {   display: inline;
+      background-color:black;
+      color:white;
+  }
+  
+  .hed1>img
+  {   
+      padding-top: 2px;
+    
+      visibility:hidden ;
+      height: 15px;
+      width: 20px;
+  }
+
+  .headp1
+{
+    font-size: large;
+    border: 1px white solid;
+    padding-right: 4px;
+}
+
+
+.headp3
+{
+    border: 1px white solid;
+font-size: large;
+}
+
+
+.hed2
+{
+    background-color:black;
+    color:white;
+    font-size: medium;
+    font-weight: bolder;
+    height: 55px;
+    margin-top: 0px;
+}
+
+.hed2
+{   display: inline;
+    color:white;
+    padding-top: 10px;
+    display: none;
+
+}
+.headp1
+{
+    background-color:silver;
+    font-size:small;
+    border: 1px white solid;
+}
+.headp2
+{
+    color:grey;
+}
+.headp3
+{
+    background-color:silver;
+    border: 1px white double;
+    font-size: xx-small;
+    visibility: hidden;
+}
+.headp4
+{
+visibility: hidden;}
+ 
+.mainnav
+{
+    background-color:gold;
+    height: 70px;
+    margin-top: 0px;
+    padding-top: 5px;
+    padding-left: 12px;
+}
+
+.mainnav>a
+{   
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+  .img4
+  {
+      display: none;
+  }
+
+  main>a>img
+  {
+      margin-top: 80px;
+      margin-left:80px;
+  }
+  section>a>img
+  {
+    width: 400px;
+    height: 400px;
+  }
+
+        footer
+        {
+            width: 100%;
+            margin-bottom: -10px;
+        }
+
+        .a
+        {
+        display: none;
+        }
+        .b
+        {
+        display: none;
+        }
+
+}

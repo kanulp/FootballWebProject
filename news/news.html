@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Football All time</title>
+    <meta charset="utf-8">
+    <meta name="description" content="A football website">
+    <meta name="keywords" content="football,soccer,laliga,uefa,epl,seria-a">
+    <meta name="author" content="Karan Gajjar">
+    <link rel="stylesheet" type="text/css" href="../styles/kanishka.css" />
+
+    <link rel="stylesheet" type="text/css" href="../styles/karangajjar.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="navigation-link main-navigation">
+                <li class="navigation-link-items">
+                    <a href="../index.html">Matches</a> &nbsp; &nbsp;
+                </li>
+                <li class="navigation-link-items">
+                    <a href="#">News</a> &nbsp;&nbsp;
+                </li>
+                <li class="navigation-link-items">
+                    <a href="../matches/table.html">Table</a> &nbsp;&nbsp;
+                </li>
+                <li class="navigation-link-items">
+                    <a href="../players/players.html">Players</a> &nbsp;&nbsp;
+                </li>
+
+                <li class="navigation-link-items">
+                    <a href="../var/VAR.html">VAR</a> &nbsp;&nbsp;
+                </li>
+
+                <li class="navigation-link-items">
+                    <a href="../women/wfootball.html">Women's Football</a> &nbsp;&nbsp;
+                </li>
+                <li class="navigation-link-items">
+                    <a href="../refree/refereePage.html">Referee</a> &nbsp;&nbsp;
+                </li>
+
+                <li class="navigation-link-items">
+                    <a href="../awards/awardpage.html">Awards</a> &nbsp;&nbsp;
+                </li>
+                <li class="navigation-link-items">
+                    <a href="../merchandise/merchandise.html">Merchandise</a> &nbsp;&nbsp;
+                </li>
+                <li class="navigation-link-items">
+                    <a href="../leagues/legues.html">Leagues</a> &nbsp;&nbsp;
+                </li>
+                <li class="navigation-link-items">
+                    <a href="../highlights/highlights.html">Highlights</a> &nbsp;&nbsp;
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="header1">
+        <h1 style="color:#3a28a4;font-style: italic;font-weight:900; font-size:38px; text-shadow: 2px 2px #496379;">
+            For you!
+        </h1>
+        <br />
+    </section>
+    <main>
+        <div id="divgrid">
+        </div>
+    </main>
+    <script>
+        imglist = [
+            "../assets/karan_images/img0.jpg",
+            "../assets/karan_images/img1.jpg",
+            "../assets/karan_images/img3.jpg"
+        ];
+        newsHeadings = [
+            "What We Learned From FC Barcelona And Sevilla’s La Liga Clash",
+            "Barcelona 4-0 Sevilla, La Liga: Match Review",
+            "Gerard Pique, Ousmane Dembele and Ronald Araujo suspended for Eibar trip"
+
+        ]
+        newsTxts = [
+            "The opening half an hour seemed less catastrophic than against Inter on Wednesday, but Luuk De Jong still had three decent chances in quick succession. Ter Stegen will be counting his blessings to have kept a clean sheet on his 200th appearance. Individual moments of brilliance again saved the day Shortly after however, there was an overhead kick from Luis Suarez, a through ball from Arthur to find Arturo Vidal in the box and then the trickery of Ousmane Dembélé to put the tie beyond Sevilla's reach. Yet some detractors fretted about Barcelona's lack of collective play and what it could mean against superior teams - especially in the Champions League.",
+            "Barcelona moved into second place in the standings with an important win over Sevilla. Four different goal scorers found the back of the net, including all three members of the attacking trio of Luis Suarez, Ousmane Dembele and Lionel Messi, while Arturo Vidal also scored for the Catalans. The win did come at a great cost as three Barcelona players picked up suspensions.",
+            "Gerard Pique picked up his fifth booking of the new La Liga season on Sunday, meaning he will miss Barcelona’s next game against Eibar on October 19. The centre-back will be joined on the sidelines by Ronald Araújo who was harshly sent off on his La Liga debut, while Ousmane Dembele also saw red for two bookable offences."
+        ]
+
+        function populateNewsList() {
+
+            for (let index = 0; index < imglist.length; index++) {
+
+                const element = imglist[index];
+
+                var divcontent = document.createElement("div");
+                divcontent.className = "clearfix";
+
+                document.getElementById("divgrid").appendChild(divcontent);
+
+                var imgele = document.createElement("img");
+                imgele.src = imglist[index];
+                imgele.className = "img";
+                divcontent.appendChild(imgele);
+
+                var divinner = document.createElement("div");
+
+                var h2ele = document.createElement("h2");
+                var t = document.createTextNode(newsHeadings[index]);
+                h2ele.appendChild(t);
+
+                divinner.appendChild(h2ele);
+
+                var span = document.createElement("span");
+                span.innerHTML = newsTxts[index];
+
+                divinner.appendChild(span);
+
+                divcontent.appendChild(divinner);
+
+                var br = document.createElement("br");
+
+                document.getElementById("divgrid").appendChild(br);
+
+            }
+        }
+        populateNewsList();
+    </script>
+    <footer>
+        <div class="a">
+            <p>Subscribe to our mailing list to get more information</p>
+            <br>
+            <label for="exampleInputEmail2">your email</label>
+            <input type="email" class="form-control form-control-lg" id="exampleInputEmail2" placeholder="your email">
+            <button type="submit" class="btn btn-default btn-md">subscribe</button>
+            </form>
+        </div>
+
+        <div class="b">
+            <h3>Social</h3>
+            <p>UEFA Championships League<br>
+
+            </p>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+        </div>
+        <hr>
+        <p class="text-center">&copy; UEFA Championships League. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

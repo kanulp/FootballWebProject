@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!-- points table feature -->
+
+<head>
+    <title>Matches played points table</title>
+    <link rel="stylesheet" href="../styles/kanishka.css">
+    <link href="../assets/soccer.ico" rel="shortcut icon" type="image/png" />
+    <meta charset="utf-8">
+    <meta name="description" content="Detailed matches played in the championships data" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="soccer, football clubs, fc " />
+</head>
+
+<body onLoad="buildHtmlTable('#clubStandings')">
+    <!-- header should remain constant for all pages which will contain navigation links -->
+    <header>
+        <nav>
+            <ul class="navigation-link">
+                <li class="navigation-link-items">
+                    <a href="../index.html">Matches</a> &nbsp; &nbsp;
+                </li>
+                <li class="navigation-link-items">
+                    <a href="../news/news.html">News</a> &nbsp;&nbsp;
+                </li>
+                <li class="navigation-link-items">
+                    <a href="../matches/table.html">Table</a> &nbsp;&nbsp;
+                </li>
+                <li class="navigation-link-items">
+                    <a href="../players/players.html">Players</a> &nbsp;&nbsp;
+                </li>
+
+                <li class="navigation-link-items">
+                    <a href="../var/VAR.html">VAR</a> &nbsp;&nbsp;
+                </li>
+
+                <li class="navigation-link-items">
+                    <a href="../women/wfootball.html">Women's Football</a> &nbsp;&nbsp;
+                </li>
+                <li class="navigation-link-items">
+                    <a href="../refree/refereePage.html">Referee</a> &nbsp;&nbsp;
+                </li>
+
+                <li class="navigation-link-items">
+                    <a href="../awards/awardpage.html">Awards</a> &nbsp;&nbsp;
+                </li>
+                <li class="navigation-link-items">
+                    <a href="../merchandise/merchandise.html">Merchandise</a> &nbsp;&nbsp;
+                </li>
+                <li class="navigation-link-items">
+                    <a href="../leagues/legues.html">Leagues</a> &nbsp;&nbsp;
+                </li>
+                <li class="navigation-link-items">
+                    <a href="../highlights/highlights.html">Highlights</a> &nbsp;&nbsp;
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="match-details-container">
+            Season<br />
+            <div class="box">
+                <select>
+                    <option>2019-20</option>
+                    <option>2018-19</option>
+                    <option>2017-18</option>
+                    <option>2016-17</option>
+                </select>
+            </div>
+
+            <table id="clubStandings">
+            </table>
+        </div>
+    </main>
+    <script src="./table.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</body>
+
+</html>
