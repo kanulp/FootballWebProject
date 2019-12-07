@@ -1,0 +1,19 @@
+{
+    "imglist": [{
+            "1": "./images/img0.jpg"
+        },
+        { "2": "./images/img1.jpg" },
+
+        { "3": "./images/img3.jpg" }
+    ],
+    "newsHeadings": [
+        { "1": "What We Learned From FC Barcelona And Sevilla/�s La Liga Clash" },
+        { "2": "Barcelona 4-0 Sevilla, La Liga: Match Review" },
+        { "3": "Gerard Pique, Ousmane Dembele and Ronald Araujo suspended for Eibar trip" }
+    ],
+    "newsTxts": [
+        { "1": "The opening half an hour seemed less catastrophic than against Inter on Wednesday, but Luuk De Jong still had three decent chances in quick succession. Ter Stegen will be counting his blessings to have kept a clean sheet on his 200th appearance. Individual moments of brilliance again saved the day Shortly after however, there was an overhead kick from Luis Suarez, a through ball from Arthur to find Arturo Vidal in the box and then the trickery of Ousmane Demb�l� to put the tie beyond Sevilla's reach. Yet some detractors fretted about Barcelona's lack of collective play and what it could mean against superior teams - especially in the Champions League." },
+        { "2": "Barcelona moved into second place in the standings with an important win over Sevilla. Four different goal scorers found the back of the net, including all three members of the attacking trio of Luis Suarez, Ousmane Dembele and Lionel Messi, while Arturo Vidal also scored for the Catalans. The win did come at a great cost as three Barcelona players picked up suspensions." },
+        { "3": "Gerard Pique picked up his fifth booking of the new La Liga season on Sunday, meaning he will miss Barcelona�s next game against Eibar on October 19. The centre-back will be joined on the sidelines by Ronald Ara�jo who was harshly sent off on his La Liga debut, while Ousmane Dembele also saw red for two bookable offences." }
+    ]
+}
