@@ -1,10 +1,10 @@
 {
     "imglist": [{
-            "1": "./images/img0.jpg"
+            "1": "../assets/news_images/news_1.jpg"
         },
-        { "2": "./images/img1.jpg" },
+        { "2": "../assets/news_images/news_2.jpg" },
 
-        { "3": "./images/img3.jpg" }
+        { "3": "../assets/news_images/news_3.jpg" }
     ],
     "newsHeadings": [
         { "1": "What We Learned From FC Barcelona And Sevilla/�s La Liga Clash" },
