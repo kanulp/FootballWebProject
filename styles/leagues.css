@@ -29,7 +29,6 @@ body
 display: grid;
 grid-gap:10x;
 grid-auto-rows: mimax(100px,auto);
-
 margin-left:80px ;
 }
 

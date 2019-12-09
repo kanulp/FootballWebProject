@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UEFA Comment Page</title>
+    <link rel="stylesheet" href="../styles/commentpagenew.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="soccer, football clubs, fc " />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+
+</head>
+
+<!-- header should remain constant for all pages which will contain navigation links -->
+
+<body>
+
+    
+<header>
+    <nav id="headerNav">
+
+    </nav>
+</header>
+
+<h1 style="
+text-align: center;
+">Comment Page</h1>
+    
+
+    <section style=" height: 60%;   width: 100%">
+        <div class="w3-content w3-section" style="
+        margin: auto;
+        height: 80%;
+        width: 48%">
+           <img class="mySlides" src="../assets/comment_page/images/Jubilation.jpg" style="height: 100%; width: 100%">
+           <img class="mySlides" src="../assets/comment_page/images/JuventusBayer.jpg"  style="height: 100%; width: 100%">
+           <img class="mySlides" src="../assets/comment_page/images/Ronaldo.jpg"  style="height: 100%; width: 100%">
+        
+        </section>   
+        
+        </div>
+        
+        <!--automatic slide show-->
+        <script>
+            let myIndex = 0;
+            carousel();
+            
+            function carousel() {
+              let i;
+              let x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 3000); // Change image every 3 seconds
+            }
+            </script>
+
+
+    <article>
+        <h3>Insights</h3>
+        <ol>
+            <li>The home side has won all three meetings between Juventus and Bayer Leverkusen in the Champions League, with the Old Lady winning their two home games against the German side by a combined score of 7-0.</li>
+            <li>Bayer Leverkusen failed to attempt a single shot on target in this match -this is the first time they have done so in a champions Legue outing since Opta began recording this data in 2003-04, in what is their 48th game played in the competition
+                in this time.</li>
+            <li>Bayer Leverkusen have become the 33rd different club against which Juventus' Cristiano Ronaldo has scored in the Champions League, equalling the record previously set by Raul ( also 33 sides).</li>
+
+        </ol>
+
+    </article>
+
+
+    <div class="comments">
+        <h3>Comments</h3>
+
+        <ol id="list_add">
+            <li>Match played at Juventus Stadium. Juventus gets their first victory in Group D, a 3-0 sucess over Bayer Leverkusen, courtesy of goals from Higuain, Bernardeschi and Ronaldo. They led 1-0 at the break, after Higuain put them ahead after 17
+                minutes. Juve then dominated the second hald, Bernardeschi doubling their lead early on, before Ronaldo had a couple of chances to ectend their lead, but was denied by Hradecky. However, he finally got his goal late on to make it 3-0 and
+                wrap up victory.</li>
+        </ol>
+    </div>
+
+
+
+
+    <!--Commment section-->
+    <div class="add_comment">
+        <input class="input_box" type="text" id="comment">
+        <br>
+        <button id="add_button" onclick="myFunction()">Add Comment</button>
+    </div>
+
+    <!--Substituion section-->
+    <div class="subsitution">
+        <h3>Subsitution</h3>
+        <div> Final Juve substitution, with Higuain coming off the pitch and he has has been replaced by Dybala.</div>
+    </div>
+
+    <!--Score section-->
+    <div class="goal">
+        <h3 class="headinggoal">Goal</h3>
+        <div class="scorelist_div"><select id="scorelist" onchange="changetime()">
+            </select></div>
+        <div class="goalScorehalf" id="goalScorehalf">Juventus 1 - 0 Bayer</div>
+        <div class="goalScorefull" id="goalScorefull">Juventus 3 - 0 Bayer</div>
+    </div>
+    <!--Substitution-->
+    <div class="Subsitutiontime">
+        <h3 class="headinggoal">Subsitution Time</h3>
+        <div class="subs">IN</div>
+        <div class="subs">Paulo Dyolabo </div>
+        <div class="subs">OUT</div>
+        <div class="subs">Gonzala Higuain</div>
+    </div>
+    <!--Footer-->
+    <!--Footer-->
+    <footer>
+        <div class="a">
+            <br>
+            <input type="email" id="enter"class="form-control form-control-lg" id="exampleInputEmail2" placeholder="Your email">
+            <div id="result"></div>
+            <button type="submit" class="btnsub" id="btnsub"onclick="mysub()">subscribe</button>
+            </form>
+        </div>
+
+        <div class="b">
+            <h3>Social</h3>
+            </p>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+        </div>
+        <hr>
+        <p class="text-center">&copy; UEFA Championships League. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+<!--Javascript-->
+<!--Javascript-->
+
+
+    <script src="../js/commentpagescript.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/footer.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    background-color: skyblue;
+    border: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+.headerlogo {
+    width: 10%;
+    height: 75%;
+    padding-left: -50px;
+    padding-top: 10px;
+    padding-right: 50px;
+}
+
+.main-navigation {
+    position: fixed;
+    top: -16px;
+    width: 100%;
+    left: -1px;
+}
+
+.navigation-link {
+    list-style-type: none;
+    background-color: rgb(22, 62, 100);
+}
+
+.left-menu>ul>li::before {
+    content: "\2022";
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.navigation-link-items {
+    display: inline-block;
+}
+
+.navigation-link-items1 {
+    display: flex;
+    display: inline-block;
+    flex-direction: column-reverse;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    color: white;
+}
+
+ul>li:hover {
+    padding: 5px;
+    background-color: skyblue;
+    border-radius: 5px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    background-color: rgb(22, 62, 100);
+    width: 100%;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.main {
+    text-align: left;
+    width: 80%;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav {
+    background-color: rgb(22, 62, 100);
+    color: white;
+}
+
+.img_big {
+    width: 40%;
+    height: 60%;
+    
+}
+
+.info {
+    width: 80%;
+    height: 80%;
+    margin-left: 1%;
+}
+
+section {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-evenly;
+    margin-bottom: 1%;
+}
+
+
+
+h2 {
+    width: 80%;
+    margin: auto;
+}
+
+.list_order {
+    margin-left: 36%;
+}
+
+ol {
+    list-style-type: disc;
+    display: inline-block;
+}

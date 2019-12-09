@@ -1,0 +1,32 @@
+.navigation-link {
+    display: block;
+    list-style-type: none;
+    /* background-color: #003472; */
+    background-image: linear-gradient(to right, #25255a, grey);
+    text-decoration: none;
+    height: 40px;
+    padding-top: 10px;
+    z-index: 1;
+}
+
+.left-menu>ul>li::before {
+    content: "\2022";
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.navigation-link-items {
+    display: inline-block;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    color: white;
+}
+
+header>nav {
+    margin-top: -19px;
+}

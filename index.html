@@ -7,6 +7,9 @@
 <head>
     <title>Matches played</title>
     <link rel="stylesheet" href="styles/kanishka.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="assets/soccer.ico" rel="shortcut icon" type="image/png" />
     <meta charset="utf-8">
     <meta name="description" content="Detailed matches played in the championships data" />
@@ -14,55 +17,14 @@
     <meta name="keywords" content="soccer, football clubs, fc " />
 </head>
 
-<body>
+<body onLoad="buildHtmlTable('#clubStandings')">
     <!-- header should remain constant for all pages which will contain navigation links -->
-
     <header>
-        <nav>
-            <ul class="navigation-link main-navigation">
-                <li class="navigation-link-items">
-                    <a href="index.html">Matches</a> &nbsp; &nbsp;
-                </li>
-                <li class="navigation-link-items">
-                    <a href="news/news.html">News</a> &nbsp;&nbsp;
-                </li>
-                <li class="navigation-link-items">
-                    <a href="matches/table.html">Table</a> &nbsp;&nbsp;
-                </li>
-                <li class="navigation-link-items">
-                    <a href="matches/match_details.html#stats">Stats</a> &nbsp;&nbsp;
-                </li>
-                <li class="navigation-link-items">
-                    <a href="players/players.html">Players</a> &nbsp;&nbsp;
-                </li>
+        <nav id="headerNav">
 
-                <li class="navigation-link-items">
-                    <a href="var/VAR.html">VAR</a> &nbsp;&nbsp;
-                </li>
-
-                <li class="navigation-link-items">
-                    <a href="women/wfootball.html">Women's Football</a> &nbsp;&nbsp;
-                </li>
-                <li class="navigation-link-items">
-                    <a href="refree/refereePage.html">Referee</a> &nbsp;&nbsp;
-                </li>
-
-                <li class="navigation-link-items">
-                    <a href="awards/awardpage.html">Awards</a> &nbsp;&nbsp;
-                </li>
-                <li class="navigation-link-items">
-                    <a href="merchandise/merchandise.html">Merchandise</a> &nbsp;&nbsp;
-                </li>
-                <li class="navigation-link-items">
-                    <a href="leagues/legues.html">Leagues</a> &nbsp;&nbsp;
-                </li>
-                <li class="navigation-link-items">
-                    <a href="highlights/highlights.html">Highlights</a> &nbsp;&nbsp;
-                </li>
-            </ul>
         </nav>
     </header>
-    <main class="padding-adjust">
+    <main>
         <div class="match-details-container">
             <!-- heading h2 -->
             Season<br />
@@ -74,36 +36,44 @@
                     <option>2016-17</option>
                 </select>
             </div>
+
+            <h2>Club standings</h2>
+            <table id="clubStandings"></table>
+            <hr />
             <!--Modal popup images with interactive display-->
             <h2>Image-Popup Highlights!</h2>
             <section>
-                <div class="row">
+                <div id="main-row" class="row">
                     <div class="column">
-                        <img id="myImg0" src="assets/extras/1.jpg" alt="What a save by the goalkeeper!">
-                        <img id="myImg1" src="assets/extras/2.jpg" alt="Gotze! GOAAL!!">
-                        <img id="myImg2" src="assets/extras/3.jpg" alt="Just punched the ball away!">
-                        <img id="myImg3" src="assets/extras/4.jpg" alt="GOALLLLLL! They are into the finals!">
-                        <img id="myImg4" src="assets/extras/5.jpg" alt="Messi being Messi!!">
-                        <img id="myImg5" src="assets/extras/6.jpg" alt=" 4 Years of hardwork. Their expressions say it all">
-                        <img id="myImg6" src="assets/extras/7.jpg" alt="12 years the manager has waited, and finally!">
+                        <img id="myImg0" src="assets/extras/extra1.jpg" alt="What a save by the goalkeeper!">
+                        <img id="myImg1" src="assets/extras/extra2.jpg" alt="Gotze! GOAAL!!">
+                        <img id="myImg2" src="assets/extras/extra3.jpg" alt="Just punched the ball away!">
+                        <img id="myImg3" src="assets/extras/extra4.jpg" alt="GOALLLLLL! They are into the finals!">
+                        <img id="myImg4" src="assets/extras/extra5.jpg" alt="Messi being Messi!!">
+                        <img id="myImg5" src="assets/extras/extra6.jpg"
+                            alt=" 4 Years of hardwork. Their expressions say it all">
+                        <img id="myImg6" src="assets/extras/extra7.jpg"
+                            alt="12 years the manager has waited, and finally!">
                     </div>
                     <div class="column">
-                        <img id="myImg7" src="assets/extras/8.jpg" alt="Canadian team!">
-                        <img id="myImg8" src="assets/extras/9.jpg" alt="Barcelona!">
-                        <img id="myImg9" src="assets/extras/10.jpg" alt="Group photo anyone?!">
-                        <img id="myImg10" src="assets/extras/11.jpg" alt="fitness">
-                        <img id="myImg11" src="assets/extras/12.jpg" alt="Tossed away!">
-                        <img id="myImg12" src="assets/extras/13.jpg" alt="run along!">
+                        <img id="myImg7" src="assets/extras/extra8.jpg" alt="Canadian team!">
+                        <img id="myImg8" src="assets/extras/extra9.jpg" alt="Barcelona!">
+                        <img id="myImg9" src="assets/extras/extra10.jpg" alt="Group photo anyone?!">
+                        <img id="myImg10" src="assets/extras/extra11.jpg" alt="fitness">
+                        <img id="myImg11" src="assets/extras/extra12.jpg" alt="Tossed away!">
+                        <img id="myImg12" src="assets/extras/extra13.jpg" alt="run along!">
                         <img id="myImg13" src="assets/club-logos/liverpool.png" alt="liverpool.">
                     </div>
                     <div class="column">
-                        <img id="myImg14" src="assets/extras/14.jpg" alt="Group one!">
-                        <img id="myImg15" src="assets/club-logos/chelsea.png"  alt="chelsea.">
-                        <img id="myImg16" src="assets/club-logos/granada.png"  alt="granada">
-                        <img id="myImg17" src="assets/club-logos/dortmund.png"  alt="dortmund">
-                        <img id="myImg18" src="assets/club-logos/juventus.png"  alt="juventus">
-                        <img id="myImg19" src="assets/club-logos/levante.png"  alt="levante">
+                        <img id="myImg14" src="assets/extras/extra.jpg" alt="Group one!">
+                        <img id="myImg15" src="assets/club-logos/chelsea.png" alt="chelsea.">
+                        <img id="myImg16" src="assets/club-logos/granada.png" alt="granada">
+                        <img id="myImg17" src="assets/club-logos/dortmund.png" alt="dortmund">
+                        <img id="myImg18" src="assets/club-logos/juventus.png" alt="juventus">
+                        <img id="myImg19" src="assets/club-logos/levante.png" alt="levante">
                     </div>
+                    <img id="myImg20" width="300" height="600" src="assets/extras/extras1.jpg" alt="letbegin">
+
                     <!--Reusable modal popup-->
                     <div id="myModal" class="modal">
                         <span class="close">&times;</span>
@@ -147,8 +117,32 @@
             </section>
         </div>
     </main>
+    <footer class="footer">
+        <div class="a">
+            <br>
+            <input type="email" id="enter" class="form-control form-control-lg" id="exampleInputEmail2"
+                placeholder="Your email">
+            <div id="result"></div>
+            <button type="submit" class="btnsub" id="btnsub" onclick="mysub()">subscribe</button>
+            </form>
+        </div>
+
+        <div class="b">
+            <h3>Social</h3>
+            </p>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+        </div>
+        <hr>
+        <p class="text-center">&copy; UEFA Championships League. All Rights Reserved.</p>
+        </div>
+    </footer>
     <!--inclusion of javascript-->
     <script src="js/main.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="js/table.js"></script>
+    <script src="../js/footer.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </body>
 
 </html>

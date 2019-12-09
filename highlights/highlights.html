@@ -12,59 +12,43 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
        
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
-        </head>
+            <link rel="stylesheet" href="../styles/header.css">
+            <link rel="stylesheet" href="../styles/footer.css">
+
+          </head>
 
 <body>
+  <button onclick="topFunction()" id="myBtn" >Top</button>
 
-<header>
-        <nav>
-            <ul class="navigation-link">
-                    <img class="headerlogo" src="../assets/highlights_images/header_img.png" alt="Football">
-            
-                    <li class="navigation-link-items">
-                        <a href="../index.html">Matches</a> &nbsp; &nbsp;
-                    </li>
-                    <li class="navigation-link-items">
-                        <a href="../news/news.html">News</a> &nbsp;&nbsp;
-                    </li>
-                    <li class="navigation-link-items">
-                        <a href="../matches/table.html">Table</a> &nbsp;&nbsp;
-                    </li>
-                    <li class="navigation-link-items">
-                        <a href="../players/players.html">Players</a> &nbsp;&nbsp;
-                    </li>
-    
-                    <li class="navigation-link-items">
-                        <a href="../var/VAR.html">VAR</a> &nbsp;&nbsp;
-                    </li>
-    
-                    <li class="navigation-link-items">
-                        <a href="../women/wfootball.html">Women's Football</a> &nbsp;&nbsp;
-                    </li>
-                    <li class="navigation-link-items">
-                        <a href="../refree/refereePage.html">Referee</a> &nbsp;&nbsp;
-                    </li>
-    
-                    <li class="navigation-link-items">
-                        <a href="../awards/awardpage.html">Awards</a> &nbsp;&nbsp;
-                    </li>
-                    <li class="navigation-link-items">
-                        <a href="../merchandise/merchandise.html">Merchandise</a> &nbsp;&nbsp;
-                    </li>
-                    <li class="navigation-link-items">
-                        <a href="../leagues/legues.html">Leagues</a> &nbsp;&nbsp;
-                    </li>
-                    <li class="navigation-link-items">
-                        <a href="../highlights/highlights.html">Highlights</a> &nbsp;&nbsp;
-                    </li>
-                    <li class="navigation-link-items">
-                        <a href="../commentpage/commentpagenew.html">Comments</a> &nbsp;&nbsp;
-                    </li>
-    
-            </ul>
+    <header>
+        <nav id="headerNav" style="margin-top: 12px;">
+
         </nav>
     </header>
+
+
+    <div class="slideshow-container">
+            <div class="mySlides fade">
+            <img src="../assets/highlights_images/highlights_slider_1.jpg" >
+            </div>
+        
+            <div class="mySlides fade">
+            <img src="../assets/highlights_images/highlights_slider_3.jpg" >
+            </div>
+        
+            <div class="mySlides fade">
+            <img src="../assets/highlights_images/highlights_slider_2.jpg" >
+            </div>
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+        
 
     <header class="head1">
         
@@ -75,29 +59,47 @@
         <p class="head2p0">BEST</p>
         <p class="head2p1">H.I.G.H - L.I.G.H.T.S </p>
         <p class="head2p2">OF ALL TIME </p>
-        <a class="img1" href="highlights.html">  </a>
-    
-    </header>
+   </header>
             
-                <select class="select1">
-                    <option>All Highlights</option>
-                    <option>2019 Matches</option>
-                    <option>2018 Matches</option>
-                    <option>2017 Matches</option>
-                    <option>2016 Matches</option>
-                </select>
+    <div class="timeline">
+            <div class="container left">
+              <div class="content">
+                <h2><a href="#sec2019">2019 Highlights</a></h2>
+                <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+              </div>
+            </div>
+            <div class="container right">
+              <div class="content">
+                <h2><a href="#sec2018">2018 Highlights</a></h2>
+                <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+              </div>
+            </div>
+            <div class="container left">
+              <div class="content">
+                <h2><a href="#sec2017">2017 Highlights</a></h2>
+                <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+              </div>
+            </div>
+            <div class="container right">
+              <div class="content">
+                <h2><a href="#sec2016" style="color: #551A8B;">2016 Highlights</a></h2>
+                <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+              </div>
+            </div>  
+          </div>
+          
 
-              <div class="divfor1">  
-                <section class="sec2019">
+              <div class="divfor1" >  
+                <section class="sec2019" id="sec2019">
                         
-                        <h2 class="p2019"> 2019 Highlights</h2>
+                        <h2 class="p2019" id="p2019"> 2019 Highlights</h2>
                         <iframe  src="https://www.youtube.com/embed/Rmx18IPIuIs"> </iframe>
                         <iframe  src="https://www.youtube.com/embed/iWfm1MDJ9JI"> </iframe>
                         <iframe  src="https://www.youtube.com/embed/xigR__FXGl0"> </iframe>
                 
                     </section>
                 
-                <section class="sec2018">
+                <section class="sec2018" id="sec2018">
                         
                         <h2 class="p2018"> 2018 Highlights</h2>
                         <iframe  src="https://www.youtube.com/embed/GrsEAvRerTg"> </iframe>
@@ -108,7 +110,7 @@
             </div>
 
             <div class="divfor2">
-                <section class="sec2017">
+                <section class="sec2017" id="sec2017">
                         
                     <h2 class="p2017"> 2017 Highlights</h2>
                     <iframe  src="https://www.youtube.com/embed/sRxsW91x0Rg"> </iframe>
@@ -116,9 +118,9 @@
                     <iframe  src="https://www.youtube.com/embed/_X-nImlwz0w"> </iframe>
                 </section>
 
-                <section class="sec2016">
+                <section class="sec2016" id="sec2016">
                         
-                    <h2 class="p2016"> 2016 Highlights</h2>
+                    <h2 class="p2016" id="p2016"> 2016 Highlights</h2>
                     <iframe  src="https://www.youtube.com/embed/Rmx18IPIuIs"> </iframe>
                     <iframe  src="https://www.youtube.com/embed/FFuOvrTnThc"> </iframe>
                     <iframe  src="https://www.youtube.com/embed/ANwZeJasM7M"> </iframe>
@@ -139,26 +141,33 @@
 <!--Footer-->
 <!--Footer-->
 <!--Footer-->
-    <footer>
-            <div class="a">
-                   <p>Subscribe to our mailing list to get more information</p>
-                   <br>
-                       <label for="exampleInputEmail2">your email</label>
-                       <input type="email" class="form-control form-control-lg" id="exampleInputEmail2" placeholder="your email">
-                     <button type="submit" class="btn btn-default btn-md">subscribe</button>
-                   </form>
-            </div>
-            
-            <div class="b">
-                   <h3>Social</h3>
-                   <p>UEFA Championships League<br>
-                    
-                   </p>
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-twitter"></a></div>
-             </div>
-             <p class="text-center">&copy; UEFA Championships League. All Rights Reserved.</p>
-     </footer>
+<footer >
+    <div class="a" >
+        <br>
+        <input type="email" id="enter"class="form-control form-control-lg" id="exampleInputEmail2" placeholder="Your email">
+        <div id="result"></div>
+        <button type="submit" class="btnsub" id="btnsub"onclick="mysub()">subscribe</button>
+        </form>
+    </div>
+
+    <div class="b">
+        <h3>Social</h3>
+        </p>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+    </div>
+    <hr>
+    <p class="text-center">&copy; UEFA Championships League. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+
+    <!-- JAVASCRIPT-->    
+    <script src="../js/header.js"></script>
+    <script src="../js/footer.js"></script>
+    <script src="../js/highlights.js"></script>
+
 
     </body>
 </html>

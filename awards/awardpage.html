@@ -5,64 +5,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Award Page</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../styles/award.css.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="soccer, football clubs, fc " />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+
 </head>
 
 
-<nav>
-    <ul class="navigation-link">
-        <li class="navigation-link-items">
-            <a href="../index.html">Matches</a> &nbsp; &nbsp;
-        </li>
-        <li class="navigation-link-items">
-            <a href="../news/news.html">News</a> &nbsp;&nbsp;
-        </li>
-        <li class="navigation-link-items">
-            <a href="../matches/table.html">Table</a> &nbsp;&nbsp;
-        </li>
-        <li class="navigation-link-items">
-            <a href="../players/players.html">Players</a> &nbsp;&nbsp;
-        </li>
+<body>
+    
+    <header>
+        <nav id="headerNav">
 
-        <li class="navigation-link-items">
-            <a href="../var/VAR.html">VAR</a> &nbsp;&nbsp;
-        </li>
-
-        <li class="navigation-link-items">
-            <a href="../women/wfootball.html">Women's Football</a> &nbsp;&nbsp;
-        </li>
-        <li class="navigation-link-items">
-            <a href="../refree/refereePage.html">Referee</a> &nbsp;&nbsp;
-        </li>
-
-        <li class="navigation-link-items">
-            <a href="../Award Page/awardpage.html">Awards</a> &nbsp;&nbsp;
-        </li>
-        <li class="navigation-link-items">
-            <a href="../merchandise/merchandise.html">Merchandise</a> &nbsp;&nbsp;
-        </li>
-        <li class="navigation-link-items">
-            <a href="../leagues/legues.html">Leagues</a> &nbsp;&nbsp;
-        </li>
-        <li class="navigation-link-items">
-            <a href="../highlights/highlights.html">Highlights</a> &nbsp;&nbsp;
-        </li>
-    </ul>
-</nav>
+        </nav>
+    </header>
 
 
+<h1 style="
+margin-left: 10%;
+">Award Page</h1>
+  <section>
+<div class="w3-content w3-section" style="
+    height: 60%;
+    width: 60%;
+    width: 60%;
+    margin-bottom: 4%;">
+  <img class="mySlides" src="../assets/award_image/Angerer.jpg" style="width:100%">
+  <img class="mySlides" src="../assets/award_image/Messi.jpg" style="width:100%">
+  <img class="mySlides" src="../assets/award_image/Sasic.jpg" style="width:100%"> 
+
+</section>   
+
+</div>
+
+<!--automatic slide show to display the pictures of the award winners-->
+<script>
+    let myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      let i;
+      let x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 3000); // Change image every 3 seconds
+    }
+    </script>
+    
 
 <main>
     <section>
-        <img class="img_big" src="images/Ronaldo.jpg" alt="ronaldo award">
+        <img class="img_big" src="../assets/award_image/Ronaldo.jpg" alt="ronaldo award">
 
         <div class="info">
-            <p>25/08/2016</p>Cristiano Ronaldo named Best Player in Europe
-            A UEFA Champions League winner with Real Madrid and a European champion with Portugal, Cristiano Ronaldo has
-            claimed the 2015/16 UEFA Best Player in Europe Award.
+            <p>25/08/2016</p>Cristiano Ronaldo named Best Player in Europe A UEFA Champions League winner with Real Madrid and a European champion with Portugal, Cristiano Ronaldo has claimed the 2015/16 UEFA Best Player in Europe Award.
         </div>
 
 
@@ -70,12 +73,11 @@
 
 
     <section>
-        <img class="img_big" src="images/Messi.jpg" alt="messi award">
+        <img class="img_big" src="../assets/award_image/Messi.jpg" alt="messi award">
 
         <div class="info">
-            <p>27/08/2015</p> Messi named Best Player in Europe for second time
-            Barcelona's Lionel Messi has received the UEFA Best Player in Europe Award for the second time after
-            finishing ahead of Cristiano Ronaldo and Luis Suárez in a live poll of 54 journalists.
+            <p>27/08/2015</p> Messi named Best Player in Europe for second time Barcelona's Lionel Messi has received the UEFA Best Player in Europe Award for the second time after finishing ahead of Cristiano Ronaldo and Luis Suárez in a live poll of 54
+            journalists.
         </div>
 
 
@@ -83,13 +85,11 @@
 
 
     <section>
-        <img class="img_big" src="images/Angerer.jpg" alt="angerer award">
+        <img class="img_big" src="../assets/award_image/Angerer.jpg" alt="angerer award">
 
         <div class="info">
 
-            <p>05/09/2013</p>Angerer wins Best Women's Player award
-            Germany goalkeeper Nadine Angerer is the inaugural winner of the UEFA Best Women's Player in Europe Award
-            for the season 2012/13 after topping the journalists' vote.
+            <p>05/09/2013</p>Angerer wins Best Women's Player award Germany goalkeeper Nadine Angerer is the inaugural winner of the UEFA Best Women's Player in Europe Award for the season 2012/13 after topping the journalists' vote.
         </div>
 
 
@@ -97,12 +97,10 @@
 
 
     <section>
-        <img class="img_big" src="images/Sasic.jpg" alt="sasic award">
+        <img class="img_big" src="../assets/award_image/Sasic.jpg" alt="sasic award">
         <div class="info">
             <p>27/08/2013 </p>
-            Sasic wins Best Women's Player Award
-            The now retired Célia Šašić was voted the winner of the UEFA Best Women's Player in Europe Award for 2014/15
-            ahead of Amandine Henry and Dzsenifer Marozsán.
+            Sasic wins Best Women's Player Award The now retired Célia Šašić was voted the winner of the UEFA Best Women's Player in Europe Award for 2014/15 ahead of Amandine Henry and Dzsenifer Marozsán.
         </div>
 
     </section>
@@ -122,9 +120,9 @@
 
 
 
-<h2>These awards will be presented during the relevant competition's group stage draw ceremony.</h2>
+<h4 style="margin-left: 9%">These awards will be presented during the relevant competition's group stage draw ceremony.</h4>
 
-<div class="list_order">
+<div class="list_order" style ="margin-left:9%">
     <ol>
         <li>UEFA Champions League Goalkeeper of the Season</li>
         <li>UEFA Champions League Defender of the Season</li>
@@ -144,12 +142,10 @@
     <p> Indulge in the aroma of freshly ground roast coffee. Specialty drinks are avaliable hot or cold. </p>
 
     <p><strong>UEFA grassroots awards</strong></p>
-    <p> Enjoy a selection of our fresh-baked, organic pastries, including fresh-fruit muffins, scones,croissants, and
-        cinammon rolls.</p>
+    <p> Enjoy a selection of our fresh-baked, organic pastries, including fresh-fruit muffins, scones,croissants, and cinammon rolls.</p>
 
     <p><strong>Lunchtime is Anytime</strong></p>
-    <p> Savour delicious wraps and sandwiches on hearty, whole-grain breads with locally-grown salad, fruit,and
-        vegetables.</p>
+    <p> Savour delicious wraps and sandwiches on hearty, whole-grain breads with locally-grown salad, fruit,and vegetables.</p>
 
     <p><strong>Panoramic View</strong></p>
     <p> Take in some scenery! The top of our lighthouse offers a panoramic view of the countryside.
@@ -158,26 +154,39 @@
 
 
 
-<!--Footer-->
-<footer>
-    <div class="footer_a">
-        <form>
-            <p>Subscribe to our mailing list to get more information</p>
+    <!--Footer-->
+    <!--Footer-->
+    <footer>
+        <div class="a">
             <br>
-            <label for="exampleInputEmail2">your email</label>
-            <input type="email" class="form-control form-control-lg" id="exampleInputEmail2" placeholder="your email">
-            <button type="submit" class="btn btn-default btn-md">subscribe</button>
-        </form>
-    </div>
+            <input type="email" id="enter"class="form-control form-control-lg" id="exampleInputEmail2" placeholder="Your email">
+            <div id="result"></div>
+            <button type="submit" class="btnsub" id="btnsub"onclick="mysub()">subscribe</button>
+            </form>
+        </div>
 
-    <div class="footer_b">
-        <h3>Social</h3>
-        <p>UEFA Championships League<br>
-
-        </p>
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-twitter"></a>
+        <div class="b">
+            <h3>Social</h3>
+            </p>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+        </div>
         <hr>
         <p class="text-center">&copy; UEFA Championships League. All Rights Reserved.</p>
-    </div>
-</footer>
+        </div>
+    </footer>
+
+
+<!--Javascript-->
+<!--Javascript-->
+
+
+    <script src="../js/awardpagescript.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/footer.js"></script>
+
+
+</body>
+
+</html>
+
