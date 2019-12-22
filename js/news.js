@@ -8,7 +8,7 @@ function populateNewsList() {
 
         }).then(response => response.json())
         .then(data => {
-            for (let i = 0; i < 3; i++) {
+            for (let i = 0; i < data.imglist.length; i++) {
                 console.log(data.imglist[i][i]);
                 //console.log(data.newsTxts[0]["0"]);
                 let divcontent = document.createElement("div"); //main div

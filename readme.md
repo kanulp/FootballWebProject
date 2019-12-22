@@ -26,7 +26,7 @@ Football enthusiast, football professional, marketers, motivational speakers, fu
 * [JQuery]
 
 ## Demo :
-https://kanishkad123.github.io/WebFinalProject/
+https://kanulp.github.io/FootballWebProject/
 
 # Work done by everyone : 
 Kanishka Deshpande
@@ -67,24 +67,44 @@ Karan Gajjar
   - Women’s Football (wfootball.html)
   - Combining each one's work 
 
+* Phase one -
+Created Var page that shows information regarding how the technology improves in the refree's decision making and help to achieve at final descision where no monoply has been marked.
+
+* Phase two -
+In 2nd phase Women's football team page is designed which show the information about how women are also making impact in sports and achieving great success.
+* Phase three -
+In 3rd phase the main focus was on creating news page with dynamic features. For this json file is hosted online into github repo and it's raw path is used as an url which makes the page dynamically sources available. 
+
+Other than this I also put effort in team work to combining each other's work and making folder structure as a single feature. 
+
 Rankit Goyal
   - Merchandise page
   - Leagues page
   - Highlights page
   - Hypertext linking
-Phase One- Worked on the specific page added some Javascript and made a bit responsive.
+Phase One- Worked on the specific page added some Javascript and made it responsive.Worked on the Merchandise Page which has now Page              Load PopUp Box.
 
 Phase two- Worked on the Feedback got from the Teacher and with that modified the content on my next page.
            Responsive, Change of Header and footer with that added Javascript.
 
 Phase Three- All the 3 pages have now Javascript and all the pages can be easily navigatable.
              
-             Merchandise Page-> Its like online shopping webpage.
              
-             Leagues Pages-> It display all the top ranked  Football leagues.
              
-             Highlight-> Its like a Video Gallery.
-
+             Leagues Pages-> It display all the top ranked  Football leagues.This is the page I will be using for my presentation.
+                             This page has GRID, IMAGE ZOOM, LOCAL STORAGE, ON CLICK SHOW, GRID CLICK SHOW, SCROLL TO TOP  functions.
+                             The Grid has an onclick element which move the page to paticular element.
+                             Then at that elemnt used the JSON so the dta is coming from JSON file.
+                             And on all of the Elements I have used image zoom in as my mouse moves in and zoom out as muse movves out.
+                             And there is onclick button which when clicked will be displaying the content.
+                             
+                             Used Local Storage here to Subscribe. 
+             
+             Highlight-> Its like a Video Gallery. The Videos are fetched from YOUTUBE.
+                         Even here I have shown the working of the SLIDER that will be displayed on top of the Page.
+                         Its also Responsive and uses the CSS AND JAVASCRIPT.
+            
+            Merchandise Page-> Its like online shopping webpage.
 
 Ismaila Afuwape.
 
